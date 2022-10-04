@@ -26,3 +26,22 @@ while n1 != 99: #Enquanto o primeiro numero for diferente de 99 faça:
             n2 -= 1 #Diminui n2 em 1
     n1 -= 1 #Diminui n1 em 1
 print(res) #Imprime res
+
+
+
+# Realizando o exercício com o loop for temos:
+m = 0
+for n1 in range(100, 1000):
+
+    for n2 in range(100, 1000):
+
+        num = str(n1 * n2)
+        num_inv = num[::-1]
+
+        if num == num_inv:
+            num = int(num)
+
+            if num > m:
+                m = num
+
+print(m)

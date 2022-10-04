@@ -31,3 +31,33 @@ while parada <= 5: #Enquanto parada for menor ou igual a 5 faça:
         parada += 1 #Incrementa a variavel parada para achar o proximo numero primo
 
 print(soma/5) #Imprime a media
+
+
+# tambem pode-se realizar o exercício da seguinte forma(com 3 variáveis):
+
+n1 = 0
+n2 = 1
+stop = 0
+soma = 0
+
+while stop != 5:
+    n3 = n1 + n2
+    n1 = n2
+    n2 = n3
+    divisor = 1
+    num_divisores = 0
+
+    while divisor <= n3:
+
+        if n3 % divisor == 0:
+            num_divisores += 1
+        divisor += 1
+
+    if num_divisores == 2:
+        soma += n3
+        print(n3, end=' ')
+        stop += 1
+
+print('\n')
+print(f'A media dos 5 primeiros números primos da sequencia de fibonatti é {soma / 5}.')
+
