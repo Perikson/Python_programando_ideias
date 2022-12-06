@@ -1,0 +1,4 @@
+Aluno(a): João Nota: 8
+Aluno(a): Pedro Nota: 5
+Aluno(a): Amanda Nota: 7.1
+Aluno(a): Maria Nota: 6.5
